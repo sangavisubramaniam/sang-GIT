@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                checkout scm
+                checkout scmGit(branches: [[name: '*/sang']], extensions: [], userRemoteConfigs: [[credentialsId: '50235943-a85d-493c-af8d-5f5d38be02c1', url: 'https://github.com/sangavisubramaniam/sang-GIT.git']])
             }
         }
 
