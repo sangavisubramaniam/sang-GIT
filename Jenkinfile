@@ -9,10 +9,8 @@ pipeline {
         }
 stage('Build') {
             steps {
-
-                 readFile encoding: 'version', file: 'http://localhost:8080/job/first_pipeline/15/consoleText'
-                
-            }
+                    readFile 'C:\\ProgramData\\Jenkins\\.jenkins\\jobs\\first_pipeline\\builds\\15\\logs'
+                  }
         }
        
     }
