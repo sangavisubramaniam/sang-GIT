@@ -9,7 +9,7 @@ pipeline {
         }
 stage('Build') {
             steps {
-                    readFile 'C:\\ProgramData\\Jenkins\\.jenkins\\jobs\\first_pipeline\\builds\\15\\logs'
+                    readFile 'C:\\ProgramData\\Jenkins\\.jenkins\\jobs\\first_pipeline\\builds\\15\\log'
                   }
         }
        
