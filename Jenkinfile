@@ -10,7 +10,7 @@ pipeline {
 
         stage('Build') {
             steps {
-               nexusArtifactUploader artifacts: [[artifactId: '', classifier: '', file: 'pom.xml', type: 'xml']], credentialsId: 'c1e176e2-d3ac-4225-937e-42c0457ed05f', groupId: '', nexusUrl: '//localhost:8081/#browse/browse', nexusVersion: 'nexus3', protocol: 'http', repository: 'myfile', version: ''   }
+               nexusArtifactUploader artifacts: [[artifactId: '', classifier: '', file: 'pom.xml', type: 'xml']], credentialsId: 'c1e176e2-d3ac-4225-937e-42c0457ed05f', groupId: '', nexusUrl: 'localhost:8081/#browse/browse', nexusVersion: 'nexus3', protocol: 'http', repository: 'myfile', version: ''   }
         }
     }
 }
