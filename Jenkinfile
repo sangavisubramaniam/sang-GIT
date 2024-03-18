@@ -10,7 +10,7 @@ pipeline {
 stage('Printing')
 {
 steps{
-   sh ''' echo "hello" '''
+   ' echo "hello" '
 }
 }
 }
