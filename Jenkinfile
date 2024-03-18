@@ -7,5 +7,9 @@ pipeline {
                 checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'GIT-SANG', url: 'https://github.com/sangavisubramaniam/sang-GIT.git']])
             }
         }
-
+stage('Printing)
+{
+   sh ''' echo "hello" '''
+}
+}
 }
